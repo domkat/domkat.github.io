@@ -2358,7 +2358,7 @@ pre .javascript .function {
 }
 #totop {
   position: fixed;
-  bottom: 5em;
+  bottom: 2em;
   right: 1em;
   cursor: pointer;
 }
