@@ -1,0 +1,516 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>CentOS 6.5下Hexo的折腾记录 | DW&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="DW">
+    
+
+    
+    <meta name="description" content="生命在于折腾
+
+前言&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。
+环境需求
+Node.js
+Git
+
+安装&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 先用putty连接上服务器，然后安装Node.js：
+# yum -y install nod">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CentOS 6.5下Hexo的折腾记录">
+<meta property="og:url" content="121.42.42.229/[object Object]/Dev/centos-hexo.html.html">
+<meta property="og:site_name" content="DW's Blog">
+<meta property="og:description" content="生命在于折腾
+
+前言&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。
+环境需求
+Node.js
+Git
+
+安装&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 先用putty连接上服务器，然后安装Node.js：
+# yum -y install nod">
+<meta property="og:image" content="121.42.42.229/./a01-01.png">
+<meta property="og:image" content="121.42.42.229/./a01-02.png">
+<meta property="og:updated_time" content="2015-12-27T09:46:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CentOS 6.5下Hexo的折腾记录">
+<meta name="twitter:description" content="生命在于折腾
+
+前言&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。
+环境需求
+Node.js
+Git
+
+安装&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 先用putty连接上服务器，然后安装Node.js：
+# yum -y install nod">
+
+    
+    <link rel="alternative" href="/atom.xml" title="DW&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="DW&#39;s Blog" title="DW&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="DW&#39;s Blog">DW&#39;s Blog</a></h1>
+				<h2 class="blog-motto">Just a place to write down something</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页|Home</a></li>
+					
+						<li><a href="/archives">归档|Archives</a></li>
+					
+						<li><a href="/about">关于|About</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="http://zhannei.baidu.com/cse/search" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value= null ><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/[object Object]/Dev/centos-hexo.html.html" title="CentOS 6.5下Hexo的折腾记录" itemprop="url">CentOS 6.5下Hexo的折腾记录</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="DW" target="_blank" itemprop="author">DW</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-25T16:00:00.000Z" itemprop="datePublished"> 发表于 2015-12-26</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<blockquote>
+<p>生命在于折腾</p>
+</blockquote>
+<h3 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。</p>
+<h3 id="u73AF_u5883_u9700_u6C42"><a href="#u73AF_u5883_u9700_u6C42" class="headerlink" title="环境需求"></a>环境需求</h3><ul>
+<li><a href="https://nodejs.org" target="_blank" rel="external">Node.js</a></li>
+<li><a href="https://git-scm.com" target="_blank" rel="external">Git</a></li>
+</ul>
+<h3 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; 先用<a href="www.putty.org">putty</a>连接上服务器，然后安装<code>Node.js</code>：</p>
+<pre><code># yum -y install nodejs
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; 安装完<code>Node.js</code>继续安装<code>Git</code>：</p>
+<pre><code># sudo yum install git
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; 然后可以查看版本来确定是否安装成功了：</p>
+<pre><code># node -v
+
+# git --version
+</code></pre><p><img src="./a01-01.png" alt="Alt text"></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; OK，下面我们安装<code>Hexo</code>：</p>
+<pre><code># npm install -g hexo-cli
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; 安装<code>Hexo</code>完成后，我这里进入<code>/usr</code>文件夹下并执行如下命令：</p>
+<pre><code># cd /usr
+# hexo init myhexo
+# cd myhexo
+# npm install
+</code></pre><p>其中<code>myhexo</code>是自己指定的文件夹，你可以任意取自己喜欢的名字。</p>
+<p>主要目录结构看起来应该是这样的：</p>
+<pre><code>|--- _config.yml
+|--- node_modules
+        |-- xx
+        ·
+        ·
+        ·
+        |-- xx
+|--- package.json
+|--- scaffolds
+        |-- draft.md
+        |-- page.md
+        |-- post.md
+|--- source
+|--- themes
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; Linux下用<code>Vi</code>操作文件非常不方便（至少对我这种命令行小白来说很不方便。。。），这时候我们可以安装<code>Ftp</code>工具，这里我安装许多人比较推崇的<a href="vsftpd.beasts.org">vsftpd</a>。</p>
+<pre><code># yum -y install vsftpd
+</code></pre><p>检查一下<code>nologin</code>文件的位置，看看是在<code>/usr/sbin</code>目录下还是在<code>/sbin</code>目录下，下面代命令的目录根据这里来。接着我们创建名为<code>myftp</code>的账户。并且指定<code>/usr</code>为用户<code>myftp</code>的根目录，（此目录不要学我，我偷懒想用<code>ftp</code>操作底下的所有文件）。</p>
+<pre><code># useradd -d /usr -s /sbin
+</code></pre><p>修改我们刚刚创建的<code>myftp</code>账户的密码：</p>
+<pre><code># passwd myftp
+</code></pre><p>根据提示输入两遍密码。</p>
+<p>接着对<code>vsftpd</code>进行一些配置，用<code>vi</code>来编辑配置文件：</p>
+<pre><code># vi /etc/vsftpd/vsftpd.conf
+</code></pre><p>找到并改成这样：</p>
+<pre><code>anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+</code></pre><p><code>vi</code>中<code>x</code>是删除当前字符，<code>i</code>进入编辑模式，可以插入文本，<code>ESC</code>退出编辑模式进入命令模式，在命令模式下<code>ZZ</code>保存修改并退出。ps：命令我也是刚查的。。。</p>
+<p>接着我们配置它开机自启动：</p>
+<pre><code># chkconfig vsftpd on
+</code></pre><p>启动服务：</p>
+<pre><code># service vsftpd start
+</code></pre><p><img src="./a01-02.png" alt="Alt text"></p>
+<p>成功启动了，现在我们可以使用FTP工具来上传和下载服务器的文件了，我用的是<a href="https://filezilla-project.org" target="_blank" rel="external">FileZilla</a>。</p>
+<p><code>Hexo</code>我还是不怎么会玩，等我研究好了再补上，早知道还是继续用<a href="https://wordpress.org" target="_blank" rel="external">Wordpress</a>多省心。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术开发/">技术开发</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/CentOS/">CentOS</a><a href="/tags/Hexo/">Hexo</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="121.42.42.229/[object Object]/Dev/centos-hexo.html.html" data-title="CentOS 6.5下Hexo的折腾记录 | DW&#39;s Blog" data-tsina="undefined" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/[object Object]/hello-world.html" title="Hello World">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Hello World</span>
+</a>
+</div>
+
+
+</nav>
+
+	
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#u524D_u8A00"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u73AF_u5883_u9700_u6C42"><span class="toc-number">2.</span> <span class="toc-text">环境需求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5B89_u88C5"><span class="toc-number">3.</span> <span class="toc-text">安装</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/技术开发/" title="技术开发">技术开发<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">2</span></li></ul>
+  </div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CentOS/" title="CentOS">CentOS<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Working Hard &amp;&amp; Carry On <br/>
+			Keep walking step by step</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="DW">DW</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
