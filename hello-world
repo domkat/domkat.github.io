@@ -15,7 +15,7 @@
 Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
-<meta property="og:url" content="121.42.42.229/[object Object]/hello-world.html">
+<meta property="og:url" content="121.42.42.229/hello-world">
 <meta property="og:site_name" content="DW's Blog">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick">
@@ -82,7 +82,7 @@ Quick">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/[object Object]/hello-world.html" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/hello-world" title="Hello World" itemprop="url">Hello World</a>
   </h1>
   <p class="article-author">By
        
@@ -116,7 +116,7 @@ Quick">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="121.42.42.229/[object Object]/hello-world.html" data-title="Hello World | DW&#39;s Blog" data-tsina="undefined" class="share clearfix">
+	  <div data-url="121.42.42.229/hello-world" data-title="Hello World | DW&#39;s Blog" data-tsina="undefined" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -131,7 +131,7 @@ Quick">
  
 
 <div class="next">
-<a href="/[object Object]/Dev/centos-hexo.html.html"  title="CentOS 6.5下Hexo的折腾记录">
+<a href="/Dev/centos-hexo.html"  title="CentOS 6.5下Hexo的折腾记录">
  <strong>下一篇：</strong><br/> 
  <span>CentOS 6.5下Hexo的折腾记录
 </span>
