@@ -362,21 +362,6 @@ $(document).ready(function(){
           c.click();
         }
   
-  
-  <!-- ------ -->
-  
-  $(window).onload(function(){
-  
-	m.removeClass('moveMain');
-	a.css('display', 'block').removeClass('fadeOut');
-	o.css('display', 'none');
-	
-	$('#toc.toc-aside').css('display', 'none');
-	  
-  
-  })
-  
-  <!-- ------ -->
   $(window).resize(function(){
     getSize(); 
     if (myWidth >= 1024) {
@@ -395,12 +380,6 @@ $(document).ready(function(){
 
 <script type="text/javascript">
 $(document).ready(function(){ 
-	m.removeClass('moveMain');
-	a.css('display', 'block').removeClass('fadeOut');
-	o.css('display', 'none');
-	
-	$('#toc.toc-aside').css('display', 'none');
-	 
   var ai = $('.article-content>iframe'),
       ae = $('.article-content>embed'),
       t  = $('#toc'),
