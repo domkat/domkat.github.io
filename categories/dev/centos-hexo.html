@@ -4,26 +4,49 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | DW&#39;s Blog</title>
+    <title>CentOS 6.5下Hexo的折腾记录 | DW&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="DW">
     
 
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="生命在于折腾
+
+前言&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。
+环境需求
+Node.js
+Git
+
+安装&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 先用putty连接上服务器，然后安装Node.js：
+# yum -y install nod">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/hello-world">
+<meta property="og:title" content="CentOS 6.5下Hexo的折腾记录">
+<meta property="og:url" content="http://yoursite.com/categories/dev/centos-hexo.html">
 <meta property="og:site_name" content="DW's Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-12-26T13:39:59.000Z">
+<meta property="og:description" content="生命在于折腾
+
+前言&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。
+环境需求
+Node.js
+Git
+
+安装&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 先用putty连接上服务器，然后安装Node.js：
+# yum -y install nod">
+<meta property="og:image" content="http://yoursite.com/../img/a01-01.png">
+<meta property="og:image" content="http://yoursite.com/../img/a01-02.png">
+<meta property="og:updated_time" content="2015-12-27T16:03:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="CentOS 6.5下Hexo的折腾记录">
+<meta name="twitter:description" content="生命在于折腾
+
+前言&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。
+环境需求
+Node.js
+Git
+
+安装&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 先用putty连接上服务器，然后安装Node.js：
+# yum -y install nod">
 
     
     <link rel="alternative" href="/atom.xml" title="DW&#39;s Blog" type="application/atom+xml">
@@ -82,33 +105,95 @@ Quick">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/hello-world" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/categories/dev/centos-hexo.html" title="CentOS 6.5下Hexo的折腾记录" itemprop="url">CentOS 6.5下Hexo的折腾记录</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="DW" target="_blank" itemprop="author">DW</a>
 		
   <p class="article-time">
-    <time datetime="2015-12-27T05:12:19.000Z" itemprop="datePublished"> 发表于 2015-12-27</time>
+    <time datetime="2015-12-25T16:00:00.000Z" itemprop="datePublished"> 发表于 2015-12-26</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<blockquote>
+<p>生命在于折腾</p>
+</blockquote>
+<h3 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; 由于自己作死，把服务器安装了CentOS 6.5，对于我这个命令行小白来说简直是一种灾难。。。算了算了，自己作的死，忍着泪也要死完。</p>
+<h3 id="u73AF_u5883_u9700_u6C42"><a href="#u73AF_u5883_u9700_u6C42" class="headerlink" title="环境需求"></a>环境需求</h3><ul>
+<li><a href="https://nodejs.org" target="_blank" rel="external">Node.js</a></li>
+<li><a href="https://git-scm.com" target="_blank" rel="external">Git</a></li>
+</ul>
+<h3 id="u5B89_u88C5"><a href="#u5B89_u88C5" class="headerlink" title="安装"></a>安装</h3><p>&nbsp; &nbsp; &nbsp; &nbsp; 先用<a href="www.putty.org">putty</a>连接上服务器，然后安装<code>Node.js</code>：</p>
+<pre><code># yum -y install nodejs
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; 安装完<code>Node.js</code>继续安装<code>Git</code>：</p>
+<pre><code># sudo yum install git
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; 然后可以查看版本来确定是否安装成功了：</p>
+<pre><code># node -v
+
+# git --version
+</code></pre><p><img src="../img/a01-01.png" alt=""></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; OK，下面我们安装<code>Hexo</code>：</p>
+<pre><code># npm install -g hexo-cli
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; 安装<code>Hexo</code>完成后，我这里进入<code>/usr</code>文件夹下并执行如下命令：</p>
+<pre><code># cd /usr
+# hexo init myhexo
+# cd myhexo
+# npm install
+</code></pre><p>其中<code>myhexo</code>是自己指定的文件夹，你可以任意取自己喜欢的名字。</p>
+<p>主要目录结构看起来应该是这样的：</p>
+<pre><code>|--- _config.yml
+|--- node_modules
+        |-- xx
+        ·
+        ·
+        ·
+        |-- xx
+|--- package.json
+|--- scaffolds
+        |-- draft.md
+        |-- page.md
+        |-- post.md
+|--- source
+|--- themes
+</code></pre><p>&nbsp; &nbsp; &nbsp; &nbsp; Linux下用<code>Vi</code>操作文件非常不方便（至少对我这种命令行小白来说很不方便。。。），这时候我们可以安装<code>Ftp</code>工具，这里我安装许多人比较推崇的<a href="vsftpd.beasts.org">vsftpd</a>。</p>
+<pre><code># yum -y install vsftpd
+</code></pre><p>检查一下<code>nologin</code>文件的位置，看看是在<code>/usr/sbin</code>目录下还是在<code>/sbin</code>目录下，下面代命令的目录根据这里来。接着我们创建名为<code>myftp</code>的账户。并且指定<code>/usr</code>为用户<code>myftp</code>的根目录，（此目录不要学我，我偷懒想用<code>ftp</code>操作底下的所有文件）。</p>
+<pre><code># useradd -d /usr -s /sbin
+</code></pre><p>修改我们刚刚创建的<code>myftp</code>账户的密码：</p>
+<pre><code># passwd myftp
+</code></pre><p>根据提示输入两遍密码。</p>
+<p>接着对<code>vsftpd</code>进行一些配置，用<code>vi</code>来编辑配置文件：</p>
+<pre><code># vi /etc/vsftpd/vsftpd.conf
+</code></pre><p>找到并改成这样：</p>
+<pre><code>anonymous_enable=NO
+local_enable=YES
+write_enable=YES
+</code></pre><p><code>vi</code>中<code>x</code>是删除当前字符，<code>i</code>进入编辑模式，可以插入文本，<code>ESC</code>退出编辑模式进入命令模式，在命令模式下<code>ZZ</code>保存修改并退出。ps：命令我也是刚查的。。。</p>
+<p>接着我们配置它开机自启动：</p>
+<pre><code># chkconfig vsftpd on
+</code></pre><p>启动服务：</p>
+<pre><code># service vsftpd start
+</code></pre><p><img src="../img/a01-02.png" alt=""></p>
+<p>成功启动了，现在我们可以使用FTP工具来上传和下载服务器的文件了，我用的是<a href="https://filezilla-project.org" target="_blank" rel="external">FileZilla</a>。</p>
+<p><code>Hexo</code>我还是不怎么会玩，等我研究好了再补上，早知道还是继续用<a href="https://wordpress.org" target="_blank" rel="external">Wordpress</a>多省心。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术开发/">技术开发</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/CentOS/">CentOS</a><a href="/tags/Hexo/">Hexo</a>
+  </div>
 
 </div>
 
@@ -116,7 +201,7 @@ Quick">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/hello-world" data-title="Hello World | DW&#39;s Blog" data-tsina="undefined" class="share clearfix">
+	  <div data-url="http://yoursite.com/categories/dev/centos-hexo.html" data-title="CentOS 6.5下Hexo的折腾记录 | DW&#39;s Blog" data-tsina="undefined" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -129,14 +214,14 @@ Quick">
 	
 <nav class="article-nav clearfix">
  
-
-<div class="next">
-<a href="/dev/centos-hexo.html"  title="CentOS 6.5下Hexo的折腾记录">
- <strong>下一篇：</strong><br/> 
- <span>CentOS 6.5下Hexo的折腾记录
-</span>
+ <div class="prev" >
+ <a href="/categories/hello-world" title="Hello World">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Hello World</span>
 </a>
 </div>
+
 
 </nav>
 
@@ -148,7 +233,7 @@ Quick">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#u524D_u8A00"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u73AF_u5883_u9700_u6C42"><span class="toc-number">2.</span> <span class="toc-text">环境需求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5B89_u88C5"><span class="toc-number">3.</span> <span class="toc-text">安装</span></a></li></ol>
  
   </div>
 
